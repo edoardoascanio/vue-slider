@@ -2,15 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-    background-color:  grey;
+    background-color:  #505a63;
 }
 
 h1{
     text-align: center;
-    color: white;
+    color: lightgrey;
+    margin: 10px;
 }
 
 .container{
@@ -34,7 +36,8 @@ h1{
 
 .arrow-container{
     font-size: 36px;
-    color: lightgrey;
+    color: grey;
+    margin: 5px;
 }
 
 .arrow-container i{
@@ -48,10 +51,29 @@ h1{
 
 .center-block {
     flex: 1;
+    position: relative;
 }
 
 .slider-image{
     width: 100%;
     max-height: 400px;
     object-fit: cover;
+}
+
+.dots-container{
+    position: absolute;
+    padding: 14px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dots-container.dot{
+    display: inline-block;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    margin: 0 4px
 }
